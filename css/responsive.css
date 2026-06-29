@@ -10,6 +10,7 @@
     font-size: 13px;
     flex-direction: row;
     gap: 6px;
+    width: auto;
   }
   .fwu-section {
     padding: 2rem 1.5rem;
@@ -20,5 +21,9 @@
   }
   .fwu-nav-btn i {
     font-size: 15px;
+  }
+  .fwu-nav {
+    display: flex;
+    justify-content: center;
   }
 }
