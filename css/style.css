@@ -298,3 +298,34 @@ body {
   color: #6b8f5e;
   font-weight: 500;
 }
+
+.fwu-allergy {
+  background: #ffffff0f;
+  border: 0.5px solid #4a7c3f55;
+  border-left: 3px solid #4a7c3f;
+  border-radius: 10px;
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.fwu-allergy-title {
+  font-size: 11px;
+  font-weight: 500;
+  color: #a8c896;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.fwu-allergy-title i {
+  font-size: 13px;
+}
+.fwu-allergy-text {
+  font-family: "Playfair Display", serif;
+  font-size: 13px;
+  color: #e8e2d8;
+  line-height: 1.55;
+  font-style: italic;
+}
