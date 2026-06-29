@@ -61,16 +61,13 @@ body {
 
 /* NAV */
 .fwu-nav {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   background: #fdfaf5;
   border-bottom: 1.5px solid #d6e8cc;
   position: sticky;
   top: 0;
   z-index: 100;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
 }
 .fwu-nav::-webkit-scrollbar {
   display: none;
