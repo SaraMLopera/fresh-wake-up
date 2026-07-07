@@ -317,7 +317,38 @@
     <section id="especiales" class="fwu-section">
       <h2 class="fwu-section-header">Especiales</h2>
       <p class="fwu-section-sub">Preparaciones insignia de Fresh Wake Up</p>
-
+<div class="acc-block">
+  <button
+    class="acc-header"
+    onclick="toggleAcc(this)"
+    aria-expanded="true"
+  >
+    <div class="acc-header-left">
+      <div class="acc-icon"><i class="ti ti-gift"></i></div>
+      <div>
+        <div class="acc-title">Combos</div>
+      </div>
+    </div>
+    <i class="ti ti-chevron-down acc-arrow open"></i>
+  </button>
+  <div class="acc-body acc-body-single open">
+    <button
+      class="fwu-combo-img-wrap"
+      onclick="openImgLightbox('images/combos.png')"
+      aria-label="Ampliar imagen de combos"
+    >
+      <img
+        class="fwu-combo-img"
+        src="images/combos.png"
+        alt="Combos Fresh Wake Up: Energía Natural, Delicatessen, Tropical Fresh, Fit & Green, Colombia y Sweet Moment"
+        loading="lazy"
+      />
+      <span class="fwu-combo-zoom-hint"
+        ><i class="ti ti-zoom-in"></i> Toca para ampliar</span
+      >
+    </button>
+  </div>
+</div>
       <div class="acc-block">
         <button
           class="acc-header"
@@ -795,9 +826,24 @@
       <strong>Fresh Wake Up</strong> · Desayunos &amp; refrigerios premium
       empresariales · Trabajamos 24/7
     </footer>
+    <div
+  class="fwu-lightbox"
+  id="fwuLightbox"
+  onclick="closeImgLightbox(event)"
+>
+  <button
+    class="fwu-lightbox-close"
+    onclick="closeImgLightbox(event)"
+    aria-label="Cerrar"
+  >
+    <i class="ti ti-x"></i>
+  </button>
+  <img class="fwu-lightbox-img" id="fwuLightboxImg" src="" alt="" />
+</div>
 
     <script src="js/tabs.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lightbox.js"></script>
   </body>
 </html>

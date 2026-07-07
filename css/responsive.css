@@ -26,4 +26,8 @@
     display: flex;
     justify-content: center;
   }
+  .fwu-combo-img-wrap {
+    max-width: 640px;
+    margin: 0 auto;
+  }
 }
